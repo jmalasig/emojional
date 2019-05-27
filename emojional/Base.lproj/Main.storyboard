@@ -18,29 +18,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqf-6c-0XB">
-                                <rect key="frame" x="192" y="244" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8D-xj-EAJ">
+                                <rect key="frame" x="153" y="244" width="108" height="132"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <state key="normal" title="🐶"/>
                                 <connections>
-                                    <action selector="showMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yJ2-08-Wb0"/>
-                                    <action selector="woofTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l58-Hj-mCR"/>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ogC-oN-H8n"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDi-EY-jBC">
-                                <rect key="frame" x="192" y="632" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qc8-eR-Yhu">
+                                <rect key="frame" x="153" y="530" width="108" height="132"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <state key="normal" title="🐱"/>
                                 <connections>
-                                    <action selector="meowTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U9c-GX-c3B"/>
-                                    <action selector="showMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cR1-ef-MUQ"/>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ar8-US-gc2"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GDi-EY-jBC" secondAttribute="bottom" constant="200" id="4ow-RZ-99k"/>
-                            <constraint firstItem="sqf-6c-0XB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="6t4-Om-VxW"/>
-                            <constraint firstItem="GDi-EY-jBC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KHM-zV-nIT"/>
-                            <constraint firstItem="sqf-6c-0XB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sgK-D0-eJa"/>
+                            <constraint firstItem="qc8-eR-Yhu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7bd-Gz-hPI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qc8-eR-Yhu" secondAttribute="bottom" constant="200" id="aYL-ic-w9B"/>
+                            <constraint firstItem="N8D-xj-EAJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b1c-KI-C88"/>
+                            <constraint firstItem="N8D-xj-EAJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="opH-iO-UAw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
