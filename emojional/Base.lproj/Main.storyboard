@@ -21,10 +21,18 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqf-6c-0XB">
                                 <rect key="frame" x="192" y="244" width="30" height="30"/>
                                 <state key="normal" title="🐶"/>
+                                <connections>
+                                    <action selector="showMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yJ2-08-Wb0"/>
+                                    <action selector="woofTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l58-Hj-mCR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDi-EY-jBC">
                                 <rect key="frame" x="192" y="632" width="30" height="30"/>
                                 <state key="normal" title="🐱"/>
+                                <connections>
+                                    <action selector="meowTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U9c-GX-c3B"/>
+                                    <action selector="showMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cR1-ef-MUQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -39,6 +47,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
         </scene>
     </scenes>
 </document>
