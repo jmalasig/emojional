@@ -10,7 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let emojis = ["🐶": "-doggo", "🐱":"-meowman"]
+    let emojis = ["🐶": "doggo", "🐱":"catto"]
+    
+    let customMessages = ["doggo":["woof!","bark!","ruff!"], "catto":["meow!", "purr!", "hiss!"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +20,9 @@ class ViewController: UIViewController {
     
     @IBAction func showMessage(sender: UIButton){
         let selectedEmotion = sender.titleLabel?.text
-        let alertController = UIAlertController(title: "Hi!", message: emojis[selectedEmotion!], preferredStyle: UIAlertController.Style.alert)
+        let random = Int.random(in: 0 ... 2)
+        let emojiMessage = customMessages[emojis[selectedEmotion!]!]?[random]
+        let alertController = UIAlertController(title: "Hi!", message: emojiMessage, preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         present(alertController, animated: true, completion: nil
         )
